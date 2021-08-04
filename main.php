@@ -13,7 +13,7 @@
     $nome = $_POST['name'];
     $descricao = $_POST['description'];
 
-    Database::insert("INSERT INTO `tb_admin.funcionarios` VALUES (?,?,?)",array("null",$nome,$descricao));
+    Database::insert("INSERT INTO `tb_admin.funcionarios` VALUES (?,?,?)",array(NULL,$nome,$descricao));
   }
 
   if(isset($_POST['delete'])){
@@ -156,7 +156,7 @@
                     <?php foreach ($content as $key => $value) { ?>
                     <tr>
                       <th scope="row"><?php echo $key+1?></th>
-                      <td><?php echo $value['nome']?></td>
+                      <td><?php echo $value['name']?></td>
                       <td class="d-flex justify-content-center align-items-center">
                         <form method="post" class="m-0">
                           <input type="Submit" class="btn btn-danger" name="delete" value="Delete">

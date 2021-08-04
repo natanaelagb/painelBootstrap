@@ -10,9 +10,9 @@
 	spl_autoload_register("myAutoload");
 
 
-	define('INCLUDE_PATH_PAINEL', 'http://localhost/Painel.MyProject/');
+	define('INCLUDE_PATH_PAINEL', 'http://localhost/projeto02painel/');
 	define('HOST', 'localhost');
-	define('DATABASE', 'projeto_02');
+	define('DATABASE', 'phpprojeto02');
 	define('USER', 'root');
 	define('PASSWORD', '');
 
