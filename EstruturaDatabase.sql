@@ -31,6 +31,15 @@ CREATE TABLE `tb_admin.funcionarios` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `tb_admin.funcionarios`
+--
+
+LOCK TABLES `tb_admin.funcionarios` WRITE;
+/*!40000 ALTER TABLE `tb_admin.funcionarios` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tb_admin.funcionarios` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `tb_admin.usuarios`
 --
 
@@ -44,8 +53,18 @@ CREATE TABLE `tb_admin.usuarios` (
   `nome` varchar(30) DEFAULT NULL,
   `lastlogin` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_admin.usuarios`
+--
+
+LOCK TABLES `tb_admin.usuarios` WRITE;
+/*!40000 ALTER TABLE `tb_admin.usuarios` DISABLE KEYS */;
+INSERT INTO `tb_admin.usuarios` VALUES (2,'admin@admin','admin','Admin','Seu último login foi: 04/08/2021 às 13:30:56');
+/*!40000 ALTER TABLE `tb_admin.usuarios` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -56,4 +75,4 @@ CREATE TABLE `tb_admin.usuarios` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-08-04 13:09:42
+-- Dump completed on 2021-08-04 13:34:26
